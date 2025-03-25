@@ -4,6 +4,7 @@ const kTextstyle =
     TextStyle(fontSize: 100.0, fontFamily: 'Spartan MB', color: Colors.white);
 const kMesseageTextstyle = TextStyle(fontSize: 60, fontFamily: 'Spartan MB');
 const kWeatherIcon = TextStyle(fontSize: 80, fontFamily: 'Spartan MB');
+const KCityButtonStyle = TextStyle(fontSize: 18);
 
 const kTextFieldDecoration = InputDecoration(
     filled: true,

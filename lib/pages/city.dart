@@ -25,25 +25,24 @@ class _CityScreenState extends State<CityScreen> {
           constraints: BoxConstraints.expand(),
           child: SafeArea(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Container(
-                    child: TextField(
-                      style: TextStyle(color: Colors.black),
-                      controller: weathercontroller,
-                      decoration: kTextFieldDecoration,
-                      onChanged: (value) => cityName = value,
-                    ),
+                  child: TextField(
+                    style: TextStyle(color: Colors.black),
+                    controller: weathercontroller,
+                    decoration: kTextFieldDecoration,
+                    onChanged: (value) => cityName = value,
                   ),
                 ),
-                MaterialButton(
+                ElevatedButton(
                   onPressed: () {
                     Navigator.pop(context, cityName);
                   },
                   child: Text(
                     "Get Weather",
-                    style: kWeatherIcon,
+                    style: KCityButtonStyle,
                   ),
                 )
               ],
