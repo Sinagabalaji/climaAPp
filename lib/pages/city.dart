@@ -42,7 +42,7 @@ class _CityScreenState extends State<CityScreen> {
                   },
                   child: Text(
                     "Get Weather",
-                    style: KCityButtonStyle,
+                    style: kCityButtonStyle,
                   ),
                 )
               ],
